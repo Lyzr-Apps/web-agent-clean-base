@@ -1,0 +1,52 @@
+{
+  "agent_name": "Customer Service Agent",
+  "agent_id": "698599d07551cb7920ffe924",
+  "agent_purpose": "customer_service",
+  "description": "Handles customer inquiries using website knowledge base and Intercom integration, provides accurate responses, maintains conversational context, and escalates complex issues when necessary",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "response_message": "string",
+      "knowledge_base_used": "boolean",
+      "intercom_action_taken": "null",
+      "escalation_needed": "boolean",
+      "conversation_id": "null"
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "response_message": "To reset your password, please follow these steps:\n\n1. Go to the login page of our website.\n2. Click on the 'Forgot Password?' link.\n3. Enter your registered email address and submit the form.\n4. You will receive an email with a password reset link. Click on that link.\n5. Follow the instructions in the email to set a new password.\n\nIf you encounter any issues during the process, feel free to reach out for further assistance.",
+      "knowledge_base_used": true,
+      "intercom_action_taken": null,
+      "escalation_needed": false,
+      "conversation_id": null
+    },
+    "metadata": {
+      "agent_name": "Customer Service Agent",
+      "timestamp": "2023-10-08T12:00:00Z"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-02-06T07:36:54.315457",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "response_message": "To reset your password, please follow these steps:\n\n1. Go to the login page of our website.\n2. Click on the 'Forgot Password?' link.\n3. Enter your registered email address and submit the form.\n4. You will receive an email with a password reset link. Click on that link.\n5. Follow the instructions in the email to set a new password.\n\nIf you encounter any issues during the process, feel free to reach out for further assistance.",
+      "knowledge_base_used": true,
+      "intercom_action_taken": null,
+      "escalation_needed": false,
+      "conversation_id": null
+    },
+    "metadata": {
+      "agent_name": "Customer Service Agent",
+      "timestamp": "2023-10-08T12:00:00Z"
+    }
+  },
+  "test_passed": true
+}

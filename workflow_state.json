@@ -1,0 +1,39 @@
+{
+  "workflow_name": "OmniServe AI Customer Service Platform",
+  "created_at": "2026-02-06T00:00:00.000Z",
+  "agents": [
+    {
+      "node_id": "customer_service_agent",
+      "agent_id": "698599d07551cb7920ffe924",
+      "agent_name": "Customer Service Agent",
+      "agent_type": "single",
+      "has_knowledge_base": true,
+      "rag_id": "698599b5de7de278e55d2877",
+      "rag_name": "omniservewebsitekbc7bl",
+      "response_schema_file": "customer_service_agent_response.json"
+    }
+  ],
+  "knowledge_bases": [
+    {
+      "rag_id": "698599b5de7de278e55d2877",
+      "rag_name": "omniservewebsitekbc7bl",
+      "collection_name": "omniservewebsitekbc7bl",
+      "description": "Website knowledge base for customer service inquiries, containing product information, FAQs, policies, and help articles",
+      "status": "created_awaiting_data"
+    }
+  ],
+  "integrations": [
+    {
+      "integration_name": "intercom",
+      "tool_source": "composio",
+      "actions": [
+        "INTERCOM_CREATE_CONTACT",
+        "INTERCOM_CREATE_A_CONVERSATION",
+        "INTERCOM_REPLY_TO_CONVERSATION",
+        "INTERCOM_SEARCH_CONVERSATIONS",
+        "INTERCOM_CLOSE_CONVERSATION"
+      ],
+      "used_by": ["Customer Service Agent"]
+    }
+  ]
+}

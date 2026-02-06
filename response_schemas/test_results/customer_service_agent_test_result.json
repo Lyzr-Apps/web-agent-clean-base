@@ -1,0 +1,24 @@
+{
+  "agent_name": "Customer Service Agent",
+  "agent_id": "698599d07551cb7920ffe924",
+  "test_message": "How can I reset my password?",
+  "expected_purpose": "customer_support",
+  "timestamp": "2026-02-06T07:36:54.314745",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "success",
+    "result": {
+      "response_message": "To reset your password, please follow these steps:\n\n1. Go to the login page of our website.\n2. Click on the 'Forgot Password?' link.\n3. Enter your registered email address and submit the form.\n4. You will receive an email with a password reset link. Click on that link.\n5. Follow the instructions in the email to set a new password.\n\nIf you encounter any issues during the process, feel free to reach out for further assistance.",
+      "knowledge_base_used": true,
+      "intercom_action_taken": null,
+      "escalation_needed": false,
+      "conversation_id": null
+    },
+    "metadata": {
+      "agent_name": "Customer Service Agent",
+      "timestamp": "2023-10-08T12:00:00Z"
+    }
+  },
+  "raw_response": "{\n  \"status\": \"success\",\n  \"result\": {\n    \"response_message\": \"To reset your password, please follow these steps:\\n\\n1. Go to the login page of our website.\\n2. Click on the 'Forgot Password?' link.\\n3. Enter your registered email address and submit the form.\\n4. You will receive an email with a password reset link. Click on that link.\\n5. Follow the instructions in the email to set a new password.\\n\\nIf you encounter any issues during the process, feel free to reach out for further assistance.\",\n    \"knowledge_base_used\": true,\n    \"intercom_action_taken\": null,\n    \"escalation_needed\": false,\n    \"conversation_id\": null\n  },\n  \"metadata\": {\n    \"agent_name\": \"Customer Service Agent\",\n    \"timestamp\": \"2023-10-08T12:00:00Z\"\n  }\n}"
+}

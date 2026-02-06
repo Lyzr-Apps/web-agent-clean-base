@@ -1,0 +1,37 @@
+{
+  "workflow_name": "OmniServe AI Customer Service Platform",
+  "nodes": [
+    {
+      "id": "input_node",
+      "type": "Input",
+      "label": "Customer Message",
+      "nodeCategory": "input"
+    },
+    {
+      "id": "customer_service_agent",
+      "type": "Agent",
+      "label": "Customer Service Agent",
+      "nodeCategory": "agent",
+      "agent_id": "698599d07551cb7920ffe924",
+      "agent_name": "Customer Service Agent",
+      "has_knowledge_base": true,
+      "rag_id": "698599b5de7de278e55d2877"
+    },
+    {
+      "id": "output_node",
+      "type": "Output",
+      "label": "Agent Response",
+      "nodeCategory": "end"
+    }
+  ],
+  "edges": [
+    {
+      "source": "input_node",
+      "target": "customer_service_agent"
+    },
+    {
+      "source": "customer_service_agent",
+      "target": "output_node"
+    }
+  ]
+}
