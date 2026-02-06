@@ -862,14 +862,23 @@ export default function Home() {
                         placeholder="Type your message..."
                         value={userMessage}
                         onChange={(e) => setUserMessage(e.target.value)}
-                        onKeyPress={(e) => e.key === 'Enter' && !e.shiftKey && handleSendMessage()}
+                        onKeyDown={(e) => {
+                          if (e.key === 'Enter' && !e.shiftKey) {
+                            e.preventDefault()
+                            handleSendMessage()
+                          }
+                        }}
                         disabled={isLoading}
                         className="flex-1"
                       />
                       <Button
-                        onClick={handleSendMessage}
+                        type="button"
+                        onClick={(e) => {
+                          e.preventDefault()
+                          handleSendMessage()
+                        }}
                         disabled={isLoading || !userMessage.trim()}
-                        className="bg-[#2563EB]"
+                        className="bg-[#2563EB] hover:bg-[#1d4ed8] shrink-0"
                       >
                         {isLoading ? (
                           <Loader2 className="h-4 w-4 animate-spin" />
